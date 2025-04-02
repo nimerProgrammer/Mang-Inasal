@@ -300,7 +300,7 @@ class Application(MDApp):
 
             content_area = self.root.get_screen('home').ids.content_area
             content_area.clear_widgets()
-            
+
             page_name.add_widget(MDLabel(text="Home", halign="left"))
             fab_button.icon = "home"
 
@@ -315,7 +315,7 @@ class Application(MDApp):
             content_area.add_widget(home)
         else:
             self.show_login_failed_dialog()
-    dialog = None  # Declare this to avoid re-creating dialogs
+    dialog = None  
 
     def show_login_failed_dialog(self):
         if not self.dialog:
